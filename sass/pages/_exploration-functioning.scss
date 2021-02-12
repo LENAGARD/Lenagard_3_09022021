@@ -1,0 +1,64 @@
+.exploration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $colour-light-grey;
+  padding: 40px;
+  text-align: center;
+}
+
+.exploration__description {
+  margin-top: 10px;
+}
+
+.functioning {
+  width: 375px;
+  padding: 50px 10px;
+  margin: auto;
+  ol {
+    list-style: none;
+    counter-reset: li;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-left: 0;
+  }
+  li::before {
+    content: counter(li);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: $colour-purple;
+    position: relative;
+    left: -12px;
+  }
+  li {
+    counter-increment: li;
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 75px;
+    border-radius: 20px;
+    margin: 12px 0;
+    background-color: $colour-light-grey;
+    &:hover {
+      background-color: lighten($colour-purple, 35);
+      .color_icon {
+        color: $colour-purple;
+      }
+    }
+  }
+}
+
+.container_steps {
+  display: flex;
+  margin: auto;
+}
+
+.step {
+  margin-left: 20px;
+}

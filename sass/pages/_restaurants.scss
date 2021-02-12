@@ -1,0 +1,69 @@
+.restaurants {
+  background-color: $colour-light-grey;
+}
+
+.restaurants__container {
+  width: 375px;
+  margin: auto;
+  padding: 50px 10px;
+}
+
+.restaurant__card {
+  border-radius: 20px;
+  width: 345px;
+  height: 250px;
+  background-color: white;
+  margin: 15px auto;
+  position: relative;
+}
+
+.restaurant__card__img {
+  width: 100%;
+  height: 175px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.restaurant__card__legend {
+  display: flex;
+  padding: 0 10px 5px 10px;
+  height: 70px;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.restaurant__card__legend__text {
+  align-self: center;
+  color: black;
+}
+.restaurant__card__legend__text__name {
+  font-weight: 800;
+}
+
+.restaurant__card__legend__heart {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  color: black;
+  position: relative;
+}
+
+.heart_default {
+  opacity: 1;
+  transition: 400ms;
+  &:hover {
+    opacity: 0;
+  }
+}
+
+.heart_hover {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient($colour-purple, $colour-pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  transition: 400ms;
+  &:hover {
+    opacity: 1;
+  }
+}

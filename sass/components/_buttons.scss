@@ -1,0 +1,32 @@
+.button {
+    display: flex;
+    width: 220px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom right, $colour-pink, $colour-purple);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+    transition: 600ms;
+    &:hover{
+        background-image: linear-gradient(to bottom right, lighten($colour-pink,10), lighten($colour-purple,10));
+        box-shadow: 5px 5px 10px darken($colour-medium-grey, 20);
+    }
+}
+
+.new {
+    position: absolute;
+    display: flex;
+    top: 14px;
+    right: 12px;
+    width: 80px;
+    height: 30px;
+    background-color: $colour-green;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    color: darken($colour-green, 40);
+}

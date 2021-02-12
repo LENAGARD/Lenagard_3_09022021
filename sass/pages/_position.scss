@@ -1,0 +1,12 @@
+.position {
+  display: flex;
+  height: 50px;
+  background-color: $colour-medium-grey;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 15px 10px -16px $colour-dark-grey;
+  .position__icon {
+    padding-right: 20px;
+  }
+}

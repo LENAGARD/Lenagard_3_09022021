@@ -1,0 +1,33 @@
+.footer__container {
+  width: 375px;
+  margin: auto;
+  padding: 20px;
+}
+
+footer {
+  background-color: $colour-dark-grey;
+  color: white;
+}
+
+.footer__logo {
+  display: block;
+  font-family: "Shrikhand";
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer__style {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+  line-height: 25px;
+}
+
+.footer__icon {
+  width: 15px;
+  margin-right: 10px;
+}
