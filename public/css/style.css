@@ -32,6 +32,97 @@ h2 {
   font-size: 1.2rem;
 }
 
+.button {
+  display: flex;
+  width: 220px;
+  height: 50px;
+  border-radius: 25px;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin: 40px;
+  transition: 600ms;
+}
+.button:hover {
+  background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
+  box-shadow: 5px 5px 10px #b7b7b7;
+}
+
+.new {
+  position: absolute;
+  display: flex;
+  top: 14px;
+  right: 12px;
+  width: 80px;
+  height: 30px;
+  background-color: #99E2D0;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  color: #278870;
+}
+
+.display-1 {
+  animation: show 500ms 200ms;
+  animation-fill-mode: forwards;
+}
+
+.display-2 {
+  animation: show 500ms 400ms;
+  animation-fill-mode: forwards;
+}
+
+.display-3 {
+  animation: show 500ms 600ms;
+  animation-fill-mode: forwards;
+}
+
+.display-4 {
+  animation: show 500ms 800ms;
+  animation-fill-mode: forwards;
+}
+
+.display-5 {
+  animation: show 500ms 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.display-6 {
+  animation: show 500ms 1200ms;
+  animation-fill-mode: forwards;
+}
+
+.display-7 {
+  animation: show 500ms 1400ms;
+  animation-fill-mode: forwards;
+}
+
+.display-8 {
+  animation: show 500ms 1600ms;
+  animation-fill-mode: forwards;
+}
+
+.display-9 {
+  animation: show 500ms 1800ms;
+  animation-fill-mode: forwards;
+}
+
+.display-10 {
+  animation: show 500ms 2000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 header {
   align-items: center;
   justify-content: center;
@@ -41,40 +132,6 @@ header {
 .logo {
   width: 165px;
   padding: 15px 0;
-}
-
-.footer__container {
-  width: 375px;
-  margin: auto;
-  padding: 20px;
-}
-
-footer {
-  background-color: #353535;
-  color: white;
-}
-
-.footer__logo {
-  display: block;
-  font-family: "Shrikhand";
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.footer__style {
-  list-style: none;
-  padding: 0;
-}
-
-.footer__link {
-  color: white;
-  text-decoration: none;
-  line-height: 25px;
-}
-
-.footer__icon {
-  width: 15px;
-  margin-right: 10px;
 }
 
 .position {
@@ -226,6 +283,44 @@ footer {
   opacity: 1;
 }
 
+.footer__container {
+  width: 375px;
+  margin: auto;
+  padding: 20px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+}
+
+.footer__logo {
+  display: block;
+  font-family: "Shrikhand";
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer__style {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+  line-height: 25px;
+}
+
+.footer__icon {
+  width: 15px;
+  margin-right: 10px;
+}
+
+.illustration {
+  display: flex;
+}
+
 .illustration__photo {
   width: 375px;
   height: 260px;
@@ -253,7 +348,7 @@ footer {
 
 .menu__subpart__name {
   font-size: 1rem;
-  margin: 20px 25px 5px 22px;
+  margin: 30px 25px 5px 22px;
 }
 
 .underline {
@@ -266,8 +361,10 @@ footer {
 
 .button-part {
   margin: auto;
-  width: 200px;
+  width: 270px;
   display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
 }
 
 .menu__subpart__content {
@@ -283,39 +380,7 @@ footer {
   padding: 12px 0 12px 10px;
   background-color: white;
   overflow: hidden;
-}
-
-.button {
-  display: flex;
-  width: 220px;
-  height: 50px;
-  border-radius: 25px;
-  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  margin: 40px;
-  transition: 600ms;
-}
-.button:hover {
-  background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
-  box-shadow: 5px 5px 10px #b7b7b7;
-}
-
-.new {
-  position: absolute;
-  display: flex;
-  top: 14px;
-  right: 12px;
-  width: 80px;
-  height: 30px;
-  background-color: #99E2D0;
-  z-index: 5;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3px;
-  color: #278870;
+  opacity: 0;
 }
 
 .menu__subpart__content__information {

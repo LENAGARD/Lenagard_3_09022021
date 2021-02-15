@@ -1,17 +1,15 @@
 @import "./utils/variables";
-
 @import "./base/base";
-
+@import "./components/buttons";
+@import "./components/animations";
 @import "./layout/header";
-@import "./layout/footer";
-
 @import "./pages/position";
 @import "./pages/exploration-functioning";
 @import "./pages/restaurants";
+@import "./layout/footer";
 @import "./pages/menu";
 
-@import "./components/buttons";
-@import "./components/animations";
+
 
 
 
