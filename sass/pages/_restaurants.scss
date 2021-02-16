@@ -1,7 +1,7 @@
 .restaurants {
   background-color: $colour-light-grey;
   &__container {
-    width: 375px;
+    width: 100%;
     margin: auto;
     padding: 50px 10px;
   }
@@ -9,8 +9,8 @@
 
 .restaurant-card {
   border-radius: 20px;
-  width: 345px;
   height: 250px;
+  width: 100%;
   background-color: white;
   margin: 15px auto;
   position: relative;
@@ -62,5 +62,20 @@
   transition: 400ms;
   &:hover {
     opacity: 1;
+  }
+}
+
+/* For tablets and desktops */
+@media only screen and (min-width: 800px) {
+  .restaurants__container {
+    width: 800px;
+  }
+  .restaurants-flex {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr; 
+  }
+  .restaurant-card {
+    width: 350px;
   }
 }

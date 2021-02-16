@@ -4,7 +4,7 @@ footer {
 }
 
 .footer-container {
-  width: 375px;
+  width: 100%;
   margin: auto;
   padding: 20px;
 }
@@ -30,4 +30,18 @@ footer {
 .footer-icon {
   width: 15px;
   margin-right: 10px;
+}
+
+/* For tablets*/
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+  .footer-container {
+      width: 800px;
+  }
+}
+
+/* For desktops */
+@media only screen and (min-width: 1200px) {
+  .footer-container {
+      width: 1200px;
+  }
 }
