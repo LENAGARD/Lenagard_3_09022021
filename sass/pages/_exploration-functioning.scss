@@ -5,10 +5,9 @@
   background-color: $colour-light-grey;
   padding: 20px;
   text-align: center;
-}
-
-.exploration__description {
-  margin-top: 10px;
+  &__description {
+    margin-top: 10px;
+  }
 }
 
 .functioning {
