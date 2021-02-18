@@ -3,45 +3,41 @@ footer {
   color: white;
 }
 
-.footer-container {
+.footer {
   width: 100%;
   margin: auto;
   padding: 20px;
-}
-
-.footer-logo {
-  display: block;
-  font-family: "Shrikhand";
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.footer-style {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-link {
-  color: white;
-  text-decoration: none;
-  line-height: 25px;
-}
-
-.footer-icon {
-  width: 15px;
-  margin-right: 10px;
+  &__logo {
+    display: block;
+    font-family: "Shrikhand";
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  &__style {
+    list-style: none;
+    padding: 0;
+  }
+  &__link {
+    color: white;
+    text-decoration: none;
+    line-height: 25px;
+  }
+  &__icon {
+    width: 15px;
+    margin-right: 10px;
+  }
 }
 
 /* For tablets*/
 @media only screen and (min-width: 800px) and (max-width: 1199px) {
-  .footer-container {
-      width: 800px;
+  .footer {
+    width: 800px;
   }
 }
 
 /* For desktops */
 @media only screen and (min-width: 1200px) {
-  .footer-container {
-      width: 1200px;
+  .footer {
+    width: 1200px;
   }
 }

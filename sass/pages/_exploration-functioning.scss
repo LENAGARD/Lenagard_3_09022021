@@ -25,9 +25,7 @@
   li::before {
     content: counter(li);
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include position-flex-center;
     width: 25px;
     height: 25px;
     border-radius: 100%;

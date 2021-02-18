@@ -1,5 +1,5 @@
 .button {
-  display: flex;
+  @include position-flex-center;
   width: 220px;
   height: 50px;
   border-radius: 25px;
@@ -8,8 +8,6 @@
     $colour-pink,
     $colour-purple
   );
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
   color: white;
   margin: 40px;
@@ -26,15 +24,13 @@
 
 .new {
   position: absolute;
-  display: flex;
+  @include position-flex-center;
   top: 14px;
   right: 12px;
   width: 80px;
   height: 30px;
   background-color: $colour-green;
   z-index: 5;
-  justify-content: center;
-  align-items: center;
   border-radius: 3px;
   color: darken($colour-green, 40);
 }

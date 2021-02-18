@@ -54,7 +54,7 @@
       transform: rotate(0);
     }
     &:hover .menu__subpart__content__information {
-      width: 230px;
+      width: 65%;
     }
   }
 }
@@ -112,9 +112,7 @@
   width: 60px;
   height: 68px;
   background-color: $colour-green;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include position-flex-center;
   transform: translateX(60px);
   transition: transform 500ms cubic-bezier(0.3, 0, 0.1, 1);
 }
@@ -123,12 +121,10 @@
   height: 30px;
   width: 30px;
   background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include position-flex-center;
   border-radius: 100px;
   color: $colour-green;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
   transition-duration: 500ms;
 }
 
