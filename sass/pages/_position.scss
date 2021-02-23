@@ -4,7 +4,7 @@
   background-color: $colour-medium-grey;
   width: 100%;
   box-shadow: inset 0px 15px 10px -16px $colour-dark-grey;
-  &__icon {
+  > i {
     padding-right: 20px;
   }
 }

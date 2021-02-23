@@ -1,81 +1,80 @@
 .restaurants {
   background-color: $colour-light-grey;
-  &__container {
+  > div {
     width: 100%;
     margin: auto;
     padding: 50px 10px;
   }
-}
-
-.restaurant-card {
-  border-radius: 20px;
-  height: 250px;
-  width: 100%;
-  background-color: white;
-  margin: 15px auto;
-  position: relative;
-  &__img {
+  &__grid__card {
+    border-radius: 20px;
+    height: 250px;
     width: 100%;
-    height: 175px;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-  }
-  &__legend {
-    display: flex;
-    padding: 0 10px 5px 10px;
-    height: 70px;
-    justify-content: space-between;
-    text-decoration: none;
-  }
-}
-
-.restaurant-text {
-  align-self: center;
-  color: black;
-  &__name {
-    font-weight: 800;
-  }
-}
-
-.restaurant-heart {
-  display: flex;
-  align-items: center;
-  font-size: 1.4rem;
-  color: black;
-  position: relative;
-}
-
-.heart_default {
-  opacity: 1;
-  transition: 400ms;
-  &:hover {
-    opacity: 0;
-  }
-}
-
-.heart_hover {
-  position: absolute;
-  opacity: 0;
-  background: linear-gradient($colour-purple, $colour-pink);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: 400ms;
-  &:hover {
-    opacity: 1;
+    background-color: white;
+    margin: 15px auto;
+    position: relative;
+    img {
+      width: 100%;
+      height: 175px;
+      border-radius: 20px 20px 0 0;
+      object-fit: cover;
+    }
+    > div {
+      display: flex;
+      padding: 0 10px 5px 10px;
+      height: 70px;
+      justify-content: space-between;
+      text-decoration: none;
+    }
+    &__text {
+      align-self: center;
+      color: black;
+      &__name {
+        font-weight: 800;
+      }
+    }
+    &__heart {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      color: black;
+      position: relative;
+      &--default {
+        opacity: 1;
+        transition: 400ms;
+        &:hover {
+          opacity: 0;
+        }
+      }
+      &--hover {
+        position: absolute;
+        opacity: 0;
+        background: linear-gradient($colour-purple, $colour-pink);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 400ms;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
 
 /* For tablets and desktops */
 @media only screen and (min-width: 800px) {
-  .restaurants__container {
-    width: 800px;
+  .restaurants {
+    > div {
+      width: 800px;
+    }
   }
-  .restaurants-flex {
-    display: grid;
-    margin: auto;
-    grid-template-columns: 1fr 1fr; 
-  }
-  .restaurant-card {
-    width: 350px;
+  .restaurants {
+    &__grid {
+      display: grid;
+      margin: auto;
+      grid-template-columns: 1fr 1fr;
+      &__card {
+        width: 350px;
+      }
+    }
   }
 }

@@ -16,15 +16,15 @@ footer {
   &__style {
     list-style: none;
     padding: 0;
-  }
-  &__link {
-    color: white;
-    text-decoration: none;
-    line-height: 25px;
-  }
-  &__icon {
-    width: 15px;
-    margin-right: 10px;
+    &__link {
+      color: white;
+      text-decoration: none;
+      line-height: 25px;
+      i {
+        width: 15px;
+        margin-right: 10px;
+      }
+    }
   }
 }
 
