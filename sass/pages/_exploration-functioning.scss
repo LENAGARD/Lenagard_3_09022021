@@ -48,7 +48,7 @@
       background-color: $colour-light-grey;
       &:hover {
         background-color: lighten($colour-purple, 35);
-        .color_icon {
+        .color-icon {
           color: $colour-purple;
         }
       }
@@ -69,11 +69,11 @@
   }
   .explo-and-funct {
     &__exploration {
-    background-color: white;
-    width: 375px;
-    margin: auto;
-    border: 2px solid $colour-medium-grey;
-    border-radius: 20px;
+      background-color: white;
+      width: 375px;
+      margin: auto;
+      border: 2px solid $colour-medium-grey;
+      border-radius: 20px;
     }
   }
 }

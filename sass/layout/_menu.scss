@@ -49,6 +49,19 @@
     &__information {
       width: 80%;
       transition: width 500ms cubic-bezier(0.3, 0, 0.1, 1);
+      &__name {
+        font-size: 1.1rem;
+        font-weight: 800;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      &__details {
+        font-size: 0.9rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
     }
     &:hover .menu__flex__subpart__content__check_box {
       transform: translateX(0);
@@ -98,21 +111,6 @@
       }
     }
   }
-}
-
-.menu-name {
-  font-size: 1.1rem;
-  font-weight: 800;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.menu-details {
-  font-size: 0.9rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .button-part {
